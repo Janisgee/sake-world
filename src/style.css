@@ -1,0 +1,200 @@
+body {
+    background: linear-gradient(-80deg, #fbff09 40%, White 30%), White;
+    margin: 0px 15px;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 80px;
+    text-align: center;
+}
+
+h2 {
+    font-family: fantasy;
+    font-size: 35px;
+    text-align: center;
+    line-height: 40px;
+}
+
+h4 {
+    text-align: center;
+}
+
+h3 {
+    background: rgb(238, 221, 147, 80%);
+    text-align: center;
+    font-family: system-ui;
+    font-size: 35px;
+    padding-bottom: 1px;
+    border: 10px none black;
+    border-radius: 50px 20px 50px 20px;
+    box-shadow: 5px 5px 30px black;
+    display: block;
+    margin: 20px auto;
+    max-width: 568px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    background: radial-gradient( circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(212, 40, 69) 24.5%, rgb(230, 0, 57) 66%);
+    border: 10px dashed none;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: system-ui;
+    line-height: 80px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    transition: all 200ms ease;
+    box-shadow: 4px 4px 10px rgb(58, 57, 57);
+    cursor: pointer;
+}
+
+button:hover {
+    background: radial-gradient( circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(255, 255, 255) 24.5%, rgb(255, 255, 255) 66%);
+    color: #1a64d6;
+    font-size: 50px;
+    border: 1px solid #1a64d6;
+    border-radius: 40px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 50px;
+}
+
+.top_background {
+    color: white;
+    text-align: center;
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0 -15px;
+    height: 150px;
+    background-color: rgb(0, 0, 0, 85%);
+    position: relative;
+}
+
+.greeting {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+}
+
+.intro_picture_container {
+    position: relative;
+}
+
+.heart_emoji {
+    font-size: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.p_main {
+    line-height: 30px;
+    text-align: justify;
+}
+
+.p_sake {
+    font-size: 35px;
+    font-family: system-ui;
+    font-weight: bold;
+}
+
+.p_intro {
+    font-size: 18px;
+    font-family: system-ui;
+}
+
+.web_sake {
+    font-family: system-ui;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.web_sake:hover {
+    text-decoration: underline;
+    color: rgb(156, 144, 75);
+}
+
+.more_info {
+    font-size: 60px;
+    text-decoration: underline;
+    font-family: fantasy;
+}
+
+.web_more_information {
+    font-family: system-ui;
+    font-size: 100px;
+    color: rgb(16 0 255);
+    text-decoration: none;
+    padding: 0 50px;
+    border-radius: 50px;
+    transition: all 50ms ease-in-out;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.web_more_information:hover {
+    background-color: rgb(0, 0, 0, 80%);
+}
+
+.p_eight {
+    font-size: 35px;
+    font-family: system-ui;
+    font-weight: bold;
+}
+
+.p_grade_of_sake {
+    font-size: 20px;
+    font-family: system-ui;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.word_festival {
+    font-style: oblique;
+    font-size: 50px;
+    background: -webkit-linear-gradient(rgb(116, 43, 201), rgb(11, 1, 26));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.h3_join {
+    padding: 5px;
+}
+
+.question_age {
+    text-align: center;
+}
+
+.code_by {
+    text-align: left;
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+    width: 100%;
+    font-size: 17px;
+}
+
+.bottom_background {
+    text-align: right;
+    font-size: 30px;
+    font-family: system-ui;
+    color: white;
+    height: 50px;
+    background-color: rgb(0, 0, 0, 70%);
+    position: relative;
+    margin: 0 -15px;
+    padding: 0 10px;
+}
