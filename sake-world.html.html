@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sake World</title>
+</head>
+<style>
+    body {
+        background: linear-gradient(-80deg, #fbff09 40%, White 30%), White;
+        margin: 0px 15px;
+        overflow-x: hidden;
+    }
+    
+    h1 {
+        font-family: fantasy;
+        font-size: 80px;
+        text-align: center;
+    }
+    
+    h2 {
+        font-family: fantasy;
+        font-size: 35px;
+        text-align: center;
+        line-height: 40px;
+    }
+    
+    h4 {
+        text-align: center;
+    }
+    
+    h3 {
+        background: rgb(238, 221, 147, 80%);
+        text-align: center;
+        font-family: system-ui;
+        font-size: 35px;
+        padding-bottom: 1px;
+        border: 10px none black;
+        border-radius: 50px 20px 50px 20px;
+        box-shadow: 5px 5px 30px black;
+        display: block;
+        margin: 20px auto;
+        max-width: 568px;
+    }
+    
+    button {
+        display: block;
+        margin: 20px auto;
+        margin-bottom: 40px;
+        background: radial-gradient( circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(212, 40, 69) 24.5%, rgb(230, 0, 57) 66%);
+        border: 10px dashed none;
+        font-size: 30px;
+        color: white;
+        font-weight: bold;
+        font-family: system-ui;
+        line-height: 80px;
+        padding: 16px 24px;
+        border-radius: 8px;
+        transition: all 200ms ease;
+        box-shadow: 4px 4px 10px rgb(58, 57, 57);
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background: radial-gradient( circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(255, 255, 255) 24.5%, rgb(255, 255, 255) 66%);
+        color: #1a64d6;
+        font-size: 50px;
+        border: 1px solid #1a64d6;
+        border-radius: 40px;
+    }
+    
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 50px;
+    }
+    
+    .top_background {
+        color: white;
+        text-align: center;
+        font-family: system-ui;
+        font-weight: bold;
+        font-size: 50px;
+        margin: 0 -15px;
+        height: 150px;
+        background-color: rgb(0, 0, 0, 85%);
+        position: relative;
+    }
+    
+    .greeting {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+    }
+    
+    .intro_picture_container {
+        position: relative;
+    }
+    
+    .heart_emoji {
+        font-size: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .p_main {
+        line-height: 30px;
+        text-align: justify;
+    }
+    
+    .p_sake {
+        font-size: 35px;
+        font-family: system-ui;
+        font-weight: bold;
+    }
+    
+    .p_intro {
+        font-size: 18px;
+        font-family: system-ui;
+    }
+    
+    .web_sake {
+        font-family: system-ui;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+    
+    .web_sake:hover {
+        text-decoration: underline;
+        color: rgb(156, 144, 75);
+    }
+    
+    .more_info {
+        font-size: 60px;
+        text-decoration: underline;
+        font-family: fantasy;
+    }
+    
+    .web_more_information {
+        font-family: system-ui;
+        font-size: 100px;
+        color: rgb(16 0 255);
+        text-decoration: none;
+        padding: 0 50px;
+        border-radius: 50px;
+        transition: all 50ms ease-in-out;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .web_more_information:hover {
+        background-color: rgb(0, 0, 0, 80%);
+    }
+    
+    .p_eight {
+        font-size: 35px;
+        font-family: system-ui;
+        font-weight: bold;
+    }
+    
+    .p_grade_of_sake {
+        font-size: 20px;
+        font-family: system-ui;
+        line-height: 30px;
+        text-align: justify;
+    }
+    
+    .word_festival {
+        font-style: oblique;
+        font-size: 50px;
+        background: -webkit-linear-gradient(rgb(116, 43, 201), rgb(11, 1, 26));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .h3_join {
+        padding: 5px;
+    }
+    
+    .question_age {
+        text-align: center;
+    }
+    
+    .code_by {
+        text-align: left;
+        position: absolute;
+        left: 2px;
+        bottom: 2px;
+        width: 100%;
+        font-size: 17px;
+    }
+    
+    .bottom_background {
+        text-align: right;
+        font-size: 30px;
+        font-family: system-ui;
+        color: white;
+        height: 50px;
+        background-color: rgb(0, 0, 0, 70%);
+        position: relative;
+        margin: 0 -15px;
+        padding: 0 10px;
+    }
+</style>
+
+<body>
+    <div class="top_background">
+        <span class="greeting">Welcome to Sake World</span>
+    </div>
+    <h1>🎌Japanese Sake</h1>
+    <div class="intro_picture_container">
+        <span class="heart_emoji">💖</span>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/634/original/sake.jpg?1645365695 " />
+    </div>
+    <p class="p_main">
+        <span class="p_sake">Sake</span>
+        <span class="p_intro">is a Japanese rice wine that is made during a brewing process by
+        fermenting rice, during which the starches are converted into sugar, and
+        then alcohol. The alcohol content of sake generally ranges from 14% to
+        16%, with the exception of the "genshu" variety of sake which has a
+        higher alcohol content of 18% to 20%.
+      </span>
+    </p>
+    <hr />
+    <h2>Types Of Sake🍶</h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/633/original/01-types-sake.png?1645364736" />
+    <ul>
+        <li>
+            <a href="http://www.nada-ken.com/main/en/index_h/347.html/" title="Honjozo-shu" target="_blank" class="web_sake">Honjozo-shu (本醸造酒)</a
+        >
+      </li>
+      <li>
+        <a
+          href="http://www.nada-ken.com/main/en/index_j/343.html/"
+          title="Junmai-shu"
+          target="_blank"
+          class="web_sake"
+          >Junmai-shu (純米酒)</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.wine-searcher.com/regions-tokubetsu+junmai/"
+          title="Tokubetsu Junmai-shu"
+          target="_blank"
+          class="web_sake"
+          >Tokubetsu Junmai-shu (特別純米酒)</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.ransuisake.com/glossary/tokubetsu-honjozo-shu/"
+          title="Tokubetsu Honjoso-shu"
+          target="_blank"
+          class="web_sake"
+          >Tokubetsu Honjoso-shu (特别本酿造酒)</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.ransuisake.com/glossary/ginjo-shu/"
+          title="Ginjo-shu"
+          target="_blank"
+          class="web_sake"
+          >Ginjo-shu (吟醸酒)</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.truesake.com/collections/junmai-ginjo/"
+          title="Junmai Ginjo-shu"
+          target="_blank"
+          class="web_sake"
+          >Junmai Ginjo-shu (純米吟醸酒)</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.seriouseats.com/sake-what-is-ginjo-what-is-daiginjo-how-sake-is-made/"
+          title="Daiginjo-shu"
+          target="_blank"
+          class="web_sake"
+          >Daiginjo-shu (大吟醸酒)</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.wine-searcher.com/regions-junmai+daiginjo#:~:text=Junmai%20Daiginjo%20is%20the%20highest,symbol%20of%20Japan's%20beverage%20culture.&text=To%20qualify%20as%20Junmai%20Daiginjo,half%20of%20its%20original%20weight/"
+          title="Junmai Daiginjo-shu"
+          target="_blank"
+          class="web_sake"
+          >Junmai Daiginjo-shu (純米大吟醸酒)</a
+        >
+      </li>
+    </ul>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/636/original/Grade_of_sake.jpg?1645366830"
+    />
+    <p class="p_grade_of_sake">
+      There are <span class="p_eight">eight</span> legally defined grades of
+      premium sake. An important factor in deciding the grade of sake is the
+      milling ratio of the rice, known as seimaibuai (精米歩合). This is a
+      number you will see on every bottle of premium sake, indicating the
+      remaining portion of the rice kernel after it is milled during production.
+    </p>
+
+    <h4>
+      <span class="more_info">
+        More information regarding 🍶sake. Please click</span
+      ><br />
+      <a
+        href="https://fravel.co/different-sake-to-try-in-japan/"
+        title="Type Of Sake"
+        target="_blank"
+        class="web_more_information"
+        >👉here</a
+      >
+    </h4>
+    <h3>
+      <span class="h3_join"> PLEASE CLICK BELOW BUTTON TO JOIN OUR</span><br />
+      <span class="word_festival">SAKE FESTIVAL!</span><br />
+      <hr />
+      <button>⭕JOIN US🎊</button>
+    </h3>
+
+    <div class="bottom_background">
+      清酒Sake World<span class="code_by">Coded by Janis Chan</span>
+    </div>
+  </body>
+  <script>
+    function join() {
+      let firstName = prompt("What is your first name?");
+      let lastName = prompt("What is your last name?");
+      let age = prompt("How old are you?");
+      let heading = document.querySelector(".h3_join");
+      firstName = firstName.toUpperCase();
+      firstName = firstName.trim();
+      lastName = lastName.toUpperCase();
+      lastName = lastName.trim();
+
+      if (age < 18) {
+        alert(
+          "Sorry!😥 People who under 18 years old🔞 is not allowed to join this event."
+        );
+
+        heading.innerHTML =
+          "Hello, " +
+          firstName +
+          " " +
+          lastName +
+          "!" +
+          "<br/>" +
+          "Please join us next time when you over 18.😊";
+      } else {
+        let email = prompt("What is your email address?");
+        alert(
+          "Thankyou so much! We will send you a confirm email📩 to you. See you soon✨!"
+        );
+        heading.innerHTML =
+          "Thankyou for joining our festival🎈" +
+          "<br/>" +
+          firstName +
+          " " +
+          lastName +
+          "!";
+      }
+    }
+
+    let joinButton = document.querySelector("button");
+    joinButton.addEventListener("click", join);
+  </script>
+</html>
