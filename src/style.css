@@ -5,13 +5,13 @@ body {
 }
 
 h1 {
-    font-family: fantasy;
+    font-family: "Anton";
     font-size: 80px;
     text-align: center;
 }
 
 h2 {
-    font-family: fantasy;
+    font-family: "Anton";
     font-size: 35px;
     text-align: center;
     line-height: 40px;
@@ -136,7 +136,7 @@ img {
 .more_info {
     font-size: 60px;
     text-decoration: none;
-    font-family: fantasy;
+    font-family: "Anton";
 }
 
 .web_more_information {
