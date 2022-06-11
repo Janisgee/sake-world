@@ -26,7 +26,7 @@ h3 {
     text-align: center;
     font-family: system-ui;
     font-size: 35px;
-    padding-bottom: 1px;
+    padding: 20px 20px 1px;
     border: 10px none black;
     border-radius: 50px 20px 50px 20px;
     box-shadow: 5px 5px 30px black;
@@ -66,6 +66,12 @@ img {
     margin: 0 auto;
     max-width: 100%;
     border-radius: 50px;
+}
+
+.webpage-wrapper {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
 }
 
 .top_background {
@@ -129,7 +135,7 @@ img {
 
 .more_info {
     font-size: 60px;
-    text-decoration: underline;
+    text-decoration: none;
     font-family: fantasy;
 }
 
@@ -162,7 +168,7 @@ img {
     text-align: justify;
 }
 
-.word_festival {
+.world_festival {
     font-style: oblique;
     font-size: 50px;
     background: -webkit-linear-gradient(rgb(116, 43, 201), rgb(11, 1, 26));
@@ -197,4 +203,48 @@ img {
     position: relative;
     margin: 0 -15px;
     padding: 0 10px;
+}
+
+@media (max-width: 1400px) {
+    .webpage-wrapper {
+        width: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    .more_info {
+        font-size: 50px;
+    }
+    .web_more_information {
+        font-size: 70px;
+    }
+    .button {
+        font-size: 26px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 70px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .webpage-wrapper {
+        width: 90%;
+    }
+    .more_info {
+        font-size: 44px;
+    }
+    .web_more_information {
+        font-size: 55px;
+    }
+    .world_festival {
+        font-size: 42px;
+    }
+    .button {
+        font-size: 26px;
+        padding: 0;
+    }
 }

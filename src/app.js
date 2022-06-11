@@ -22,17 +22,21 @@ function join() {
             "<br/>" +
             "Please join us next time when you over 18.😊";
     } else {
-        let email = prompt("What is your email address?");
-        alert(
-            "Thankyou so much! We will send you a confirm email📩 to you. See you soon✨!"
-        );
-        heading.innerHTML =
-            "Thankyou for joining our festival🎈" +
-            "<br/>" +
-            firstName +
-            " " +
-            lastName +
-            "!";
+        if (age >= 18) {
+            let email = prompt("What is your email address?");
+            alert(
+                "Thankyou so much! We will send you a confirm email📩 to you. \nSee you soon✨!"
+            );
+            heading.innerHTML =
+                "Thankyou for joining our festival🎈" +
+                "<br/>" +
+                firstName +
+                " " +
+                lastName +
+                "!";
+        } else {
+            alert("Please fill in a valid information.");
+        }
     }
 }
 
